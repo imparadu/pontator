@@ -107,9 +107,19 @@ a {
     0% {
       border: 2px solid transparent;
     }
+
+    25% {
+      border: 2px solid transparent;
+    }
+
     50% {
       border: 2px solid red; /* Change 'red' to your desired border color */
     }
+
+    65% {
+        border: 2px solid transparent;
+    }
+
     100% {
       border: 2px solid transparent;
     }
@@ -117,6 +127,6 @@ a {
   
   /* Apply the animation to your element */
   .element {
-    animation: borderAnimation 5s infinite; /* '3s' is the duration, and 'infinite' makes it repeat */
+    animation: borderAnimation 10s infinite; /* '3s' is the duration, and 'infinite' makes it repeat */
   }
   
