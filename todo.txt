@@ -1,9 +1,10 @@
 [] urcat pe internet
 [] tutorial baza de date
 
-[] adaugat buton de home pe RULMENTUL
+[x] adaugat buton de home pe RULMENTUL
 [] adaugat buton de contact pe telefon
 
 [] adaugat counter sub RULMENTUL
 [] adaugat butoane start/pauza/stop
 [] adaugat G si R deasupra portii
+
