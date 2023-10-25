@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+}
+
+.header {
+    position: relative;
+    background-color: antiquewhite;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+/* Define a class for styling the button */
+.styled-button {
+    background-color: #7faf4c; /* Background color */
+    color: white;              /* Text color */
+    padding: 10px 20px;        /* Padding (top/bottom and left/right) */
+    border: none;              /* No border */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;           /* Change cursor to a pointer on hover */
+    font-size: 16px;           /* Text size */
+}
+
+/* Add a hover effect for the button */
+.styled-button:hover {
+    background-color: #45a049; /* Darker background color on hover */
+}
+
+.content {
+    width: 1000px;
+    height: 750px;
+    position: relative;
+    margin: 0 auto;
+    background-image: url("rulmentul2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.opac {
+    background-color: antiquewhite;
+    opacity: 0.9;
+}
+
+.george {
+    height: 70px;
+    width: 70px;
+    background-color: bisque;
+    position: absolute;
+    top: 420px;
+    left: 480px;
+    opacity: 0;
+}
+
+.george h1 {
+    font-size: 75px;
+    line-height: 70px;
+}
+
+.george:hover {
+    opacity: 0.3;
+}
+
+.radu {
+    height: 70px;
+    width: 70px;
+    background-color: bisque;
+    position: absolute;
+    top: 420px;
+    left: 675px;
+    opacity: 0;
+}
+
+.radu h1 {
+    font-size: 75px;
+    line-height: 70px;
+}
+
+.radu:hover {
+    opacity: 0.3;
+}
+
