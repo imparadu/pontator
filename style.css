@@ -44,39 +44,49 @@ a {
 .george {
     height: 70px;
     width: 70px;
-    background-color: bisque;
     position: absolute;
     top: 420px;
     left: 480px;
-    opacity: 0;
+    opacity: 1;
 }
 
 .george h1 {
     font-size: 75px;
     line-height: 70px;
+    opacity: 0;
 }
 
 .george:hover {
+    background-color: bisque;
     opacity: 0.3;
+}
+
+.george h1:hover {
+    opacity: 1;
 }
 
 .radu {
     height: 70px;
     width: 70px;
-    background-color: bisque;
     position: absolute;
     top: 420px;
     left: 675px;
-    opacity: 0;
+    opacity: 1;
 }
 
 .radu h1 {
     font-size: 75px;
     line-height: 70px;
+    opacity: 0;
 }
 
 .radu:hover {
     opacity: 0.3;
+    background-color: bisque;
+}
+
+.radu h1:hover {
+    opacity: 1;
 }
 
 .home {
@@ -85,10 +95,28 @@ a {
     left: 200px;
     width: 540px;
     height: 90px;
-    background-color: antiquewhite;
-    opacity: 0;
+    opacity: 1;
 }
 
 .home:hover {
+    background-color: antiquewhite;
     opacity: 0.3;
 }
+
+@keyframes borderAnimation {
+    0% {
+      border: 2px solid transparent;
+    }
+    50% {
+      border: 2px solid red; /* Change 'red' to your desired border color */
+    }
+    100% {
+      border: 2px solid transparent;
+    }
+  }
+  
+  /* Apply the animation to your element */
+  .element {
+    animation: borderAnimation 5s infinite; /* '3s' is the duration, and 'infinite' makes it repeat */
+  }
+  
