@@ -147,21 +147,26 @@ a {
   .counter {
     color: #908A44;
     background-color: #738B8E;
-    text-shadow: 2px 2px 0px #000;
+    text-shadow: 1px 1px 0px #000;
     width: fit-content;
     padding: 10px;
     font-size: 45px;
     position: absolute;
     top: 190px;
-    left: 235px;
+    left: 220px;
     border: 1px solid #00000077;
+  }
+
+  .counter p {
+    text-align: center;
+    font-size: 100px;
   }
 
   .button-container {
     position: absolute;
     top: 320px;
     left: 233px;
-    text-shadow: 2px 2px 0px #000;
+    text-shadow: 1px 1px 0px #000;
     width: fit-content;
     padding: 5px;
 
@@ -173,7 +178,7 @@ a {
     font-weight: bold;
     color: #908A44;
     background-color: #738B8E;
-    text-shadow: 2px 2px 0px #000;
+    text-shadow: 1px 1px 0px #000;
     padding: 5px 15px;
     width: fit-content;
   }

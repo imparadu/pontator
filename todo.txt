@@ -5,6 +5,6 @@
 [] adaugat buton de contact pe telefon
 
 [] adaugat counter sub RULMENTUL
-[] adaugat butoane start/pauza/stop
-[] adaugat G si R deasupra portii
+[x] adaugat butoane start/pauza/stop
+[x] adaugat G si R deasupra portii
 
