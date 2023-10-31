@@ -4,7 +4,10 @@
 [x] adaugat buton de home pe RULMENTUL
 [] adaugat buton de contact pe telefon
 
-[] adaugat counter sub RULMENTUL
+[x] adaugat counter sub RULMENTUL
 [x] adaugat butoane start/pauza/stop
 [x] adaugat G si R deasupra portii
+[] pagina calendar
+[] buton dropdown pentru an care schimba dropdown pentru luni
+[] buton dropdown pentru luni care afiseaza zilele lunii
 
