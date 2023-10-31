@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    
 }
 
 body {
@@ -159,6 +160,7 @@ a {
     top: 190px;
     left: 220px;
     border: 1px solid #00000077;
+    cursor: default;
   }
 
   .counter p {
