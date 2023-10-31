@@ -1,3 +1,5 @@
+surge --domain site-name.surge.sh .
+
 [] urcat pe internet
 [] tutorial baza de date
 
@@ -10,4 +12,5 @@
 [] pagina calendar
 [] buton dropdown pentru an care schimba dropdown pentru luni
 [] buton dropdown pentru luni care afiseaza zilele lunii
+[] rezolvat cu push pe surge
 
