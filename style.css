@@ -1,191 +1,187 @@
 * {
-    margin: 0;
-    
+  margin: 0;
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #000;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    width: fit-content;
-    height: fit-content;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
 }
 
 .header {
-    position: relative;
-    background-color: antiquewhite;
+  position: relative;
+  background-color: antiquewhite;
 }
 
 .header h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .content {
-    width: 1000px;
-    height: 750px;
-    position: relative;
-    margin: 0 auto;
-    background-image: url("rulmentul2.jpg");
-    background-size: cover;
-    background-position: center;
+  width: 1000px;
+  height: 750px;
+  position: relative;
+  margin: 0 auto;
+  background-image: url('rulmentul2.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .opac {
-    background-color: antiquewhite;
-    opacity: 0.9;
+  background-color: antiquewhite;
+  opacity: 0.9;
 }
 
 .george {
-    height: 70px;
-    width: 70px;
-    position: absolute;
-    top: 420px;
-    left: 480px;
-    opacity: 1;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 420px;
+  left: 480px;
+  opacity: 1;
 }
 
 .george h1 {
-    font-size: 75px;
-    line-height: 70px;
-    background-color: #738B8E;
-    color: #908A44;
-
+  font-size: 75px;
+  line-height: 70px;
+  background-color: #738b8e;
+  color: #908a44;
 }
 
 .george h1:hover {
-    opacity: 0.6;
-    color: #908A44;
-    background-color: #738B8E;
-    text-shadow: 2px 2px 0px #000;
+  opacity: 0.6;
+  color: #908a44;
+  background-color: #738b8e;
+  text-shadow: 2px 2px 0px #000;
 }
 
 .radu {
-    height: 70px;
-    width: 70px;
-    position: absolute;
-    top: 420px;
-    left: 675px;
-    background-color: #738B8E;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 420px;
+  left: 675px;
+  background-color: #738b8e;
 }
 
 .radu h1 {
-    font-size: 75px;
-    line-height: 70px;
-    background-color: #738B8E;
-    color: #908A44;
+  font-size: 75px;
+  line-height: 70px;
+  background-color: #738b8e;
+  color: #908a44;
 }
 
 .radu:hover {
-    opacity: 0.6;
-    color: #908A44;
-    background-color: #738B8E;
-    text-shadow: 2px 2px 0px #000;
+  opacity: 0.6;
+  color: #908a44;
+  background-color: #738b8e;
+  text-shadow: 2px 2px 0px #000;
 }
 
 .radu h1:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .home {
-    position: absolute;
-    top: 100px;
-    left: 200px;
-    width: 540px;
-    height: 90px;
-    background-color: antiquewhite;
-    opacity: 0;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 540px;
+  height: 90px;
+  background-color: antiquewhite;
+  opacity: 0;
 }
 
 .home:hover {
-    background-color: antiquewhite;
-    opacity: 0.3;
+  background-color: antiquewhite;
+  opacity: 0.3;
 }
 
 @keyframes borderAnimation {
-    0% {
-      opacity: 0;
-
-    }
-
-    25% {
-      opacity: 0;
-    }
-
-    50% {
-      opacity: 0.7;
-    }
-
-    65% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  /* Apply the animation to your element */
-  .element {
-    animation: borderAnimation 7s infinite; /* '3s' is the duration, and 'infinite' makes it repeat */
-  }
-  
-  .Gmare {
-    color: #908A44;
-    background-color: #738B8E;
-    text-shadow: 2px 2px 0px #000;
-    width: 130px;
-    text-align: center;
-    font-size: 110px;
-    position: absolute;
-    left: 405px;
-    line-height: 105px;
-    margin: 0;;
+  0% {
+    opacity: 0;
   }
 
-  .counter {
-    color: #908A44;
-    background-color: #738B8E;
-    text-shadow: 1px 1px 0px #000;
-    width: fit-content;
-    padding: 10px;
-    font-size: 45px;
-    position: absolute;
-    top: 190px;
-    left: 220px;
-    border: 1px solid #00000077;
-    cursor: default;
+  25% {
+    opacity: 0.4;
   }
 
-  .counter p {
-    text-align: center;
-    font-size: 100px;
+  50% {
+    opacity: 0.7;
   }
 
-  .button-container {
-    position: absolute;
-    top: 320px;
-    left: 233px;
-    text-shadow: 1px 1px 0px #000;
-    width: fit-content;
-    padding: 5px;
-
+  65% {
+    opacity: 0.4;
   }
 
-  button {
-    border: 1px solid black;
-    font-size: 30px;
-    font-weight: bold;
-    color: #908A44;
-    background-color: #738B8E;
-    text-shadow: 1px 1px 0px #000;
-    padding: 5px 15px;
-    width: fit-content;
-    cursor: pointer;
+  100% {
+    opacity: 0;
   }
+}
+
+/* Apply the animation to your element */
+.element {
+  animation: borderAnimation 7s infinite; /* '3s' is the duration, and 'infinite' makes it repeat */
+}
+
+.Gmare {
+  color: #908a44;
+  background-color: #738b8e;
+  text-shadow: 2px 2px 0px #000;
+  width: 130px;
+  text-align: center;
+  font-size: 110px;
+  position: absolute;
+  left: 405px;
+  line-height: 105px;
+  margin: 0;
+}
+
+.counter {
+  color: #908a44;
+  background-color: #738b8e;
+  text-shadow: 1px 1px 0px #000;
+  width: fit-content;
+  padding: 10px;
+  font-size: 45px;
+  position: absolute;
+  top: 190px;
+  left: 220px;
+  border: 1px solid #00000077;
+  cursor: default;
+}
+
+.counter p {
+  text-align: center;
+  font-size: 100px;
+}
+
+.button-container {
+  position: absolute;
+  top: 320px;
+  left: 233px;
+  text-shadow: 1px 1px 0px #000;
+  width: fit-content;
+  padding: 5px;
+}
+
+button {
+  border: 1px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  color: #908a44;
+  background-color: #738b8e;
+  text-shadow: 1px 1px 0px #000;
+  padding: 5px 15px;
+  width: fit-content;
+  cursor: pointer;
+}
