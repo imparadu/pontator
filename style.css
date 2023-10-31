@@ -4,7 +4,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #b67676;
+    background-color: #000;
 }
 
 h1 {
@@ -53,7 +53,8 @@ a {
 .george h1 {
     font-size: 75px;
     line-height: 70px;
-    opacity: 0;
+    background-color: #738B8E;
+    color: #908A44;
 
 }
 
@@ -70,13 +71,14 @@ a {
     position: absolute;
     top: 420px;
     left: 675px;
-    opacity: 1;
+    background-color: #738B8E;
 }
 
 .radu h1 {
     font-size: 75px;
     line-height: 70px;
-    opacity: 0;
+    background-color: #738B8E;
+    color: #908A44;
 }
 
 .radu:hover {
@@ -96,7 +98,8 @@ a {
     left: 200px;
     width: 540px;
     height: 90px;
-    opacity: 1;
+    background-color: antiquewhite;
+    opacity: 0;
 }
 
 .home:hover {
@@ -106,29 +109,30 @@ a {
 
 @keyframes borderAnimation {
     0% {
-      border: 2px solid transparent;
+      opacity: 0;
+
     }
 
     25% {
-      border: 2px solid transparent;
+      opacity: 0;
     }
 
     50% {
-      border: 2px solid red; /* Change 'red' to your desired border color */
+      opacity: 0.7;
     }
 
     65% {
-        border: 2px solid transparent;
+      opacity: 0;
     }
 
     100% {
-      border: 2px solid transparent;
+      opacity: 0;
     }
   }
   
   /* Apply the animation to your element */
   .element {
-    animation: borderAnimation 10s infinite; /* '3s' is the duration, and 'infinite' makes it repeat */
+    animation: borderAnimation 7s infinite; /* '3s' is the duration, and 'infinite' makes it repeat */
   }
   
   .Gmare {

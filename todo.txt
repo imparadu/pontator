@@ -1,6 +1,6 @@
 surge --domain site-name.surge.sh .
 
-[] urcat pe internet
+[x] urcat pe internet
 [] tutorial baza de date
 
 [x] adaugat buton de home pe RULMENTUL
@@ -12,5 +12,5 @@ surge --domain site-name.surge.sh .
 [] pagina calendar
 [] buton dropdown pentru an care schimba dropdown pentru luni
 [] buton dropdown pentru luni care afiseaza zilele lunii
-[] rezolvat cu push pe surge
+[x] rezolvat cu push pe surge
 
