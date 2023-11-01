@@ -19,10 +19,10 @@ window.onload = function () {
     const month = currentDate.getMonth() + 1;
     const year = currentDate.getFullYear();
 
-
     consolePls.onclick = function() {
-        timp = `${hours}:${minutes}:${seconds} - ${day}/${month}/${year}`
-        console.log(timp)
+      timp = `${hours}:${minutes}:${seconds}`
+      const arrayDeTimp = [`${timp}`, `${year}/${month}/${day}`];
+      console.log(arrayDeTimp)
     }
   
     buttonStart.onclick = function() {
@@ -43,7 +43,7 @@ window.onload = function () {
       seconds = "00";
       appendHours.innerHTML = hours;
       appendMinutes.innerHTML = minutes;
-        appendSeconds.innerHTML = seconds;
+      appendSeconds.innerHTML = seconds;
     }
     
      
@@ -57,7 +57,6 @@ window.onload = function () {
         
         if (seconds > 9){
           appendSeconds.innerHTML = seconds;
-          
         } 
         
         if (seconds > 59) {
@@ -68,6 +67,13 @@ window.onload = function () {
           appendSeconds.innerHTML = "0" + 0;
         }
         
+        if(minutes <= 9){
+          appendMinutes.innerHTML = "0" + minutes;
+        }
+        
+        if (minutes > 9){
+          appendMinutes.innerHTML = minutes;
+        } 
         if (minutes > 59){
             console.log("minutes");
             hours++;
@@ -80,3 +86,53 @@ window.onload = function () {
     
   
   }
+  document.addEventListener('DOMContentLoaded', function() {
+  function generateDaysInMonth() {
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth();
+    const daysInMonth = [];
+  
+    // Get the last day of the current month
+    const lastDay = new Date(year, month + 1, 0).getDate();
+  
+    for (let day = 1; day <= lastDay; day++) {
+      const formattedDate = `${year}/${month + 1}/${day}`; // Format: year/month/day
+      daysInMonth.push(formattedDate);
+    }
+  
+    return daysInMonth;
+  }
+  
+  function displayDaysInList(daysArray) {
+    console.log(daysArray)
+    const ul = document.getElementById('daysList');
+  
+    daysArray.forEach(date => {
+      const li = document.createElement('li');
+      li.textContent = date;
+      ul.appendChild(li);
+    });
+  }
+  
+  // Generate days and display in the HTML list
+  const daysInMonth = generateDaysInMonth();
+  displayDaysInList(daysInMonth);
+
+  function displayHours(x) {
+    const ulG = document.getElementById('oreG');
+    const ulR = document.getElementById('oreR');
+  
+    x.forEach(date => {
+      const liG = document.createElement('li');
+      const liR = document.createElement('li');
+      liG.textContent = `00:00:00`;
+      liR.textContent = `00:00:00`;
+      ulG.appendChild(liG);
+      ulR.appendChild(liR);
+    });
+  }
+  displayHours(daysInMonth)
+  console.log(daysInMonth.length)
+});
+

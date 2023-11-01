@@ -9,8 +9,9 @@ surge --domain site-name.surge.sh .
 [x] adaugat counter sub RULMENTUL
 [x] adaugat butoane start/pauza/stop
 [x] adaugat G si R deasupra portii
-[] pagina calendar
+[x] pagina calendar
 [] buton dropdown pentru an care schimba dropdown pentru luni
 [] buton dropdown pentru luni care afiseaza zilele lunii
 [x] rezolvat cu push pe surge
+[] formatare arrayDeTimp sa afiseze corect timpu
 
