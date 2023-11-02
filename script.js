@@ -18,6 +18,7 @@ window.onload = function () {
     const day = currentDate.getDate();
     const month = currentDate.getMonth() + 1;
     const year = currentDate.getFullYear();
+    console.log(year)
 
     consolePls.onclick = function() {
       timp = `${hours}:${minutes}:${seconds}`
@@ -117,6 +118,7 @@ window.onload = function () {
   
   // Generate days and display in the HTML list
   const daysInMonth = generateDaysInMonth();
+  console.log(typeof daysInMonth)
   displayDaysInList(daysInMonth);
 
   function displayHours(x) {
@@ -133,6 +135,13 @@ window.onload = function () {
     });
   }
   displayHours(daysInMonth)
-  console.log(daysInMonth.length)
+  
+  function generateYearsAndMonths() {
+    let monthsArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    for(let i = 1; i <= 12; i++) {
+
+    }
+  }
+  generateYearsAndMonths()
 });
 
