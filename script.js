@@ -18,12 +18,10 @@ window.onload = function () {
     const day = currentDate.getDate();
     const month = currentDate.getMonth() + 1;
     const year = currentDate.getFullYear();
-    console.log(year)
 
     consolePls.onclick = function() {
       timp = `${hours}:${minutes}:${seconds}`
       const arrayDeTimp = [`${timp}`, `${year}/${month}/${day}`];
-      console.log(arrayDeTimp)
     }
   
     buttonStart.onclick = function() {
@@ -61,7 +59,6 @@ window.onload = function () {
         } 
         
         if (seconds > 59) {
-          console.log("seconds");
           minutes++;
           appendMinutes.innerHTML = "0" + minutes;
           seconds = 0;
@@ -76,7 +73,6 @@ window.onload = function () {
           appendMinutes.innerHTML = minutes;
         } 
         if (minutes > 59){
-            console.log("minutes");
             hours++;
             appendHours.innerHTML = "0" + hours;
             minutes = 0;
@@ -88,12 +84,11 @@ window.onload = function () {
   
   }
   document.addEventListener('DOMContentLoaded', function() {
-  function generateDaysInMonth() {
+  function generateDaysInMonth(newMonth = 0) {
     const currentDate = new Date();
     const year = currentDate.getFullYear();
-    const month = currentDate.getMonth();
+    const month = Number(newMonth);
     const daysInMonth = [];
-  
     // Get the last day of the current month
     const lastDay = new Date(year, month + 1, 0).getDate();
   
@@ -101,12 +96,11 @@ window.onload = function () {
       const formattedDate = `${year}/${month + 1}/${day}`; // Format: year/month/day
       daysInMonth.push(formattedDate);
     }
-  
+  console.log(daysInMonth)
     return daysInMonth;
   }
   
   function displayDaysInList(daysArray) {
-    console.log(daysArray)
     const ul = document.getElementById('daysList');
   
     daysArray.forEach(date => {
@@ -118,7 +112,6 @@ window.onload = function () {
   
   // Generate days and display in the HTML list
   const daysInMonth = generateDaysInMonth();
-  console.log(typeof daysInMonth)
   displayDaysInList(daysInMonth);
 
   function displayHours(x) {
@@ -137,11 +130,32 @@ window.onload = function () {
   displayHours(daysInMonth)
   
   function generateYearsAndMonths() {
-    let monthsArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-    for(let i = 1; i <= 12; i++) {
+    let monthsArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const select = document.getElementById('monthSelection');
+    monthsArray.forEach((month, index) => {
+      const option = document.createElement('option');
+      option.setAttribute('value', index)
+      option.textContent = month;
+      select.appendChild(option);
+      
+    });
 
-    }
   }
   generateYearsAndMonths()
+  // Get the <select> element by its ID
+const selectElement = document.getElementById('monthSelection');
+
+// Listen for a change in the dropdown selection
+selectElement.addEventListener('change', function() {
+  const ul = document.getElementById('daysList')
+  console.log(ul)
+  while (ul.firstChild) {
+    ul.removeChild(ul.firstChild);
+}
+  const selectedOption = selectElement.value; // Retrieve the selected value
+  const updateContent = generateDaysInMonth(selectedOption)
+  displayDaysInList(updateContent)
+});
+
 });
 
