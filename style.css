@@ -199,6 +199,9 @@ button {
 }
 
 .tabel {
+  display: grid;
+  grid-template-columns: 150px 120px 120px; /* Creates three columns of specified widths */
+  text-align: start;
   position: absolute;
   top: 20px;
   left: 250px;  

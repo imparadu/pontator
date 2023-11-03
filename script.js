@@ -1,5 +1,7 @@
+// import { dataBase } from "./database";
+
 window.onload = function () {
-  
+  console.log(dataBase)
     var hours = 0;
     var minutes = 0;
     var seconds = 0; 
@@ -84,7 +86,8 @@ window.onload = function () {
   
   }
   document.addEventListener('DOMContentLoaded', function() {
-  function generateDaysInMonth(newMonth = 0) {
+  // Genereaza arrayu cu luni
+    function generateDaysInMonth(newMonth = 0) {
     const currentDate = new Date();
     const year = currentDate.getFullYear();
     const month = Number(newMonth);
@@ -96,7 +99,6 @@ window.onload = function () {
       const formattedDate = `${year}/${month + 1}/${day}`; // Format: year/month/day
       daysInMonth.push(formattedDate);
     }
-  console.log(daysInMonth)
     return daysInMonth;
   }
   
@@ -113,6 +115,7 @@ window.onload = function () {
   // Generate days and display in the HTML list
   const daysInMonth = generateDaysInMonth();
   displayDaysInList(daysInMonth);
+  displayHours(daysInMonth)
 
   function displayHours(x) {
     const ulG = document.getElementById('oreG');
@@ -127,8 +130,8 @@ window.onload = function () {
       ulR.appendChild(liR);
     });
   }
-  displayHours(daysInMonth)
   
+  // genereaza toate lunile din dropdown
   function generateYearsAndMonths() {
     let monthsArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     const select = document.getElementById('monthSelection');
@@ -142,18 +145,27 @@ window.onload = function () {
 
   }
   generateYearsAndMonths()
+
   // Get the <select> element by its ID
 const selectElement = document.getElementById('monthSelection');
 
 // Listen for a change in the dropdown selection
 selectElement.addEventListener('change', function() {
-  const ul = document.getElementById('daysList')
-  console.log(ul)
-  while (ul.firstChild) {
-    ul.removeChild(ul.firstChild);
-}
+  const days = document.getElementById('daysList')
+  const gHours = document.getElementById('oreG')
+  const rHours = document.getElementById('oreR')
+  while (days.hasChildNodes()) {
+    days.removeChild(days.firstChild);
+  }
   const selectedOption = selectElement.value; // Retrieve the selected value
   const updateContent = generateDaysInMonth(selectedOption)
+  while (gHours.hasChildNodes()) {
+    gHours.removeChild(gHours.firstChild);
+  }
+  while (rHours.hasChildNodes()) {
+    rHours.removeChild(rHours.firstChild);
+  }
+  displayHours(updateContent)
   displayDaysInList(updateContent)
 });
 
