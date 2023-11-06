@@ -15,3 +15,5 @@ surge --domain site-name.surge.sh .
 [x] rezolvat cu push pe surge
 [x] formatare arrayDeTimp sa afiseze corect timpu
 
+[] baza de date locala
+

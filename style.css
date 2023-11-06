@@ -31,7 +31,7 @@ a {
   height: 750px;
   position: relative;
   margin: 0 auto;
-  background-image: url('rulmentul2.jpg');
+  background-image: url("rulmentul2.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -204,7 +204,7 @@ button {
   text-align: start;
   position: absolute;
   top: 20px;
-  left: 250px;  
+  left: 250px;
   width: 600px;
   height: fit-content;
   background-color: antiquewhite;
