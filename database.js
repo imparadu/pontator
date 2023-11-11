@@ -1,5 +1,5 @@
 // const dataBase = [
-//   { id: 1, name: "radu", dates: [{ date: "data_curenta", ore: "nr_de_ore" }] },
+//   { id: 1, name: "radu", dates: [{ date: "data_curenta", ore: "nr_de_ore" }, { date: "data_curenta", ore: "nr_de_ore" }, { date: "data_curenta", ore: "nr_de_ore" }, ] },
 //   {
 //     id: 2,
 //     name: "george",
